@@ -1,7 +1,7 @@
 import React from "react";
 
 type BrokenFlowType = {
-  someProp: 0
+  someProp: number;
 };
 
 export const LegacyComponent = ({ someProp = 0 }: BrokenFlowType) => {
