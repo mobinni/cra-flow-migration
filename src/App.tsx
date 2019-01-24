@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { LegacyComponent } from "./LegacyComponent";
 
 class App extends Component {
   render() {
@@ -17,7 +18,9 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            {/*breaks*/}
+            {/*<LegacyComponent someProp="thing" />*/}
+            <LegacyComponent someProp={0} />
           </a>
         </header>
       </div>
